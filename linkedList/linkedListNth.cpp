@@ -32,7 +32,9 @@ class linkedList{
          void middle();
          void displayFromEnd1(struct linkedListNode*h);
          void displayFromEnd();
+      //   void rearrange();
 };
+
 void linkedList:: displayFromEnd(){
  displayFromEnd1(head); 
 }
@@ -197,6 +199,7 @@ int main()
  cout<<"6.Reverse\n";
  cout<<"7.Middle element\n";
  cout<<"8.Display from the end\n";
+// cout<<"9.Reaarange as EVEN followed by Odd\n";
  cout<<"Enter your choice "<<user<<"\n";
  cin>>choice;
 
@@ -229,6 +232,8 @@ int main()
         break;
  case 8:ll.displayFromEnd();
         break;
+ //case 9:ll.rearrange();
+   //     break;
  default: cout<<"Oops!Wrong choice\n";
  }
 }
